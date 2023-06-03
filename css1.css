@@ -1,0 +1,127 @@
+* {
+    box-sizing:border-box;
+}
+body {
+    margin:20px;
+    background-color: #fafafa;
+}
+textarea {
+    width:25%;
+    resize: vertical;
+    padding:15px;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    height:75px;
+}
+input[type="submit"] {
+    background-color: blue; /* задаем синий цвет фона */
+    color: white; /* задаем белый цвет текста на кнопке */
+    border: none; /* убираем стандартную рамку */
+    border-radius: 20px; /* задаем скругление углов, создавая овал */
+    padding: 10px 20px; /* задаем внутренние отступы кнопки для текста */
+    cursor: pointer; /* устанавливаем стиль курсора на указатель */
+    font-size: 16px; /* устанавливаем размер шрифта на кнопке */
+    transition: background-color 0.3s; /* добавляем плавный переход цвета фона при наведении */
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue; /* изменяем цвет фона на темно-синий при наведении курсора */
+}
+.btn-upload {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-upload:hover {
+    background-color: darkblue;
+}
+.form-wrapper {
+    border: 1px solid #000000; /* Рамка вокруг формы */
+    padding: 20px; /* Внутренний отступ от границ формы */
+    max-width: 600px; /* Максимальная ширина формы */
+    margin: 30px auto; /* Отцентровать форму на странице и добавить внешний отступ сверху и снизу */
+}
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px; /* Уменьшаем вертикальный внутренний отступ с 10px до 5px */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+a.button:hover {
+    background-color: darkblue;
+}
+select {
+    width: 220px;
+    padding:5px;
+    border-radius:10px;
+}
+.rounded-input {
+    border-radius: 5px; /* Меняйте значение для более крупных или меньших закругленных углов */
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* Дополнительный стиль, когда input находится на фокусе */
+.rounded-input:focus {
+    outline: none;
+    border-color: #0077cc;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links a {
+  --color-default: #E6E6FA; /* Задаем переменные для разных цветов */
+  --color-hover: #f00;
+  --color-active: #8B0000;
+  
+  color: var(--color-default); /* Используем переменную для цвета ссылки по умолчанию */
+  font-size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: var(--color-hover); /* Используем переменную для цвета ссылки при наведении */
+}
+
+.links a:focus,
+.links a:active {
+  color: var(--color-active); /* Используем переменную для цвета ссылки при щелчке */
+}
+
+.links a:last-child {
+  margin-right: 0;
+}
